@@ -4,6 +4,7 @@ pub mod drgraph;
 pub mod error;
 pub mod fr32;
 pub mod hasher;
+pub mod merkle;
 pub mod parameter_cache;
 pub mod proof;
 pub mod util;

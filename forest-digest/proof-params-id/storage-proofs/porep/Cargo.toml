@@ -1,5 +1,5 @@
 [package]
-name = "storage_proofs_porep"
+name = "storage-proofs-porep"
 version = "0.1.0"
 authors = ["costa-wang <3162284013@qq.com>"]
 edition = "2018"
@@ -9,3 +9,13 @@ edition = "2018"
 [dependencies]
 serde = { version = "1.0", features = ["rc", "derive"] }
 storage-proofs-core = { path = "../core" }
+anyhow = "1.0.23"
+blake2b_simd = "0.5"
+sha2 = { version = "0.8.3", package = "sha2ni" }
+paired = { version = "0.20.0", features = ["serde"] }
+thiserror = "1.0.6"
+rand = "0.7"
+generic-array = "0.13.2"
+lazy_static = "1.2"
+merkletree = "0.20.0"
+bellperson = "0.9.1"

@@ -22,3 +22,5 @@ neptune = { version = "1.0.1", features = ["gpu"] }
 lazy_static = "1.2"
 merkletree = "0.20.0"
 bellperson = "0.9.1"
+log = "0.4.7"
+rayon = "1.0.0"

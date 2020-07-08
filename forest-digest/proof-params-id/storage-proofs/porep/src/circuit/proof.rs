@@ -1,22 +1,12 @@
 use std::marker::PhantomData;
 
-use anyhow::ensure;
-use bellperson::gadgets::num;
-use bellperson::{Circuit, ConstraintSystem, SynthesisError};
-use paired::bls12_381::{Bls12, Fr};
+use bellperson::{Circuit};
+use paired::bls12_381::{Bls12};
 use storage_proofs_core::{
-    compound_proof::{CircuitComponent, CompoundProof},
     drgraph::Graph,
-    error::Result,
-    fr32::u64_into_fr,
-    gadgets::constraint,
-    gadgets::por::PoRCompound,
-    hasher::{HashFunction, Hasher},
-    merkle::{BinaryMerkleTree, MerkleTreeTrait},
+    hasher::{Hasher},
+    merkle::{MerkleTreeTrait},
     parameter_cache::{CacheableParameters, ParameterSetMetadata},
-    por,
-    proof::ProofScheme,
-    util::reverse_bit_numbering,
 };
 
 use super::params::Proof;

@@ -1,9 +1,13 @@
+use std::marker::PhantomData;
+
 use serde::{Deserialize, Serialize};
 use storage_proofs_core::{
-    parameter_cache::ParameterSetMetadata,
+    merkle::{MerkleTreeTrait},
+    parameter_cache::{ParameterSetMetadata},
 };
 
 use super::{ graph::StackedBucketGraph, LayerChallenges };
+
 #[derive(Debug, Clone)]
 pub struct SetupParams {
     // Number of nodes

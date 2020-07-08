@@ -1,4 +1,5 @@
 use paired::bls12_381::{Bls12};
+use bellperson::{Circuit};
 
 use crate::error::Result;
 use crate::parameter_cache::{CacheableParameters, ParameterSetMetadata};

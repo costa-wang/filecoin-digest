@@ -1,9 +1,6 @@
-use crate::error::*;
-use bellperson::groth16::Parameters;
-use bellperson::{groth16, Circuit};
+use bellperson::{Circuit};
 use log::info;
 use paired::bls12_381::Bls12;
-use rand::RngCore;
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
 
@@ -40,7 +37,7 @@ where
         format!(
             "{}-{:02x}",
             Self::cache_prefix(),
-            circuit_hash.iter().format("")
+            circuit_hash
         )
     }
 }
