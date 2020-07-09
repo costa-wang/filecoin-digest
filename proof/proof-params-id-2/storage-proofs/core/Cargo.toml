@@ -1,0 +1,28 @@
+[package]
+name = "storage-proofs-core"
+version = "0.1.0"
+authors = ["costa-wang <3162284013@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["rc", "derive"] }
+anyhow = "1.0.23"
+blake2b_simd = "0.5"
+sha2 = { version = "0.8.3", package = "sha2ni" }
+ff = { version = "0.2.1", package = "fff" }
+byteorder = "1"
+paired = { version = "0.20.0", features = ["serde"] }
+thiserror = "1.0.6"
+rand_chacha = "0.2.1"
+rand = "0.7"
+generic-array = "0.13.2"
+neptune = { version = "1.0.1", features = ["gpu"] }
+lazy_static = "1.2"
+merkletree = "0.20.0"
+bellperson = "0.9.1"
+log = "0.4.7"
+rayon = "1.0.0"
+hex = "0.4.0"
+itertools = "0.9"
