@@ -1,3 +1,0 @@
-[root@fileft lotus]# ./lotus client import go.mod
-2020-07-23T21:16:54.520+0800	WARN	main	lotus/main.go:81	cannot add filestore references outside ipfs root (/root)
-[root@fileft lotus]# ./lotus client import /root/lotus.log

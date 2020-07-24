@@ -1,0 +1,6 @@
+[root@fileft_1 lotus]# ./lotus net id
+12***
+另一个节点
+[root@fileft_2 lotus]# ./lotus net findpeer 12***
+{12D3KooWNP9waptPa3wwu2k7JPF59EVYauhAziRqTaM1gM1xvVvj: [/ip4/xxx.xxx.xxx.xxx/tcp/32853 /ip6/::1/tcp/38765 /ip4/xxx.xxx.xxx.xxx/tcp/32853 /ip4/127.0.0.1/tcp/32853]}
+
